@@ -69,6 +69,9 @@
             <li class="nav-item">
               <a class="nav-link" href="<?= URL ?>admin/product_form.php">BackOffice access</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?= URL ?>admin/user_list.php">Administration</a>
+            </li>
           <?php endif; ?>
 
         </ul>
