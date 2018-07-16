@@ -161,9 +161,9 @@ $id_user = (isset($update_user)) ? $update_user['id_user'] : '';
 
 $action = (isset($update_user)) ? "Update" : 'Add';
 
-debug($_POST);
-debug($_FILES);
-debug($update_user);
+//debug($_POST);
+//debug($_FILES);
+//debug($update_user);
 
 
 ?>
