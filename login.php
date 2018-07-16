@@ -56,7 +56,11 @@
             </div>
             <input type="submit" value="Login" class="btn btn-success btn-lg btn-block">
         </form>
-    
+        <br>
+
+
+
+<a class="btn btn-secondary btn-lg btn-block" href="change_password.php">Forget your password ?</a>    
 <?php
     require_once("inc/footer.php");
 ?>

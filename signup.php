@@ -68,7 +68,7 @@ if ($_POST)
         $msg_error .= "<div class='alert alert-danger'>Choose a valid gender.</div>";
     }
 
-    // OTHER CHECKS POSSIBLE HERE
+//--------------------------------------------------------------------------------------------------------------------------------
 
     if(empty($msg_error))
     {
@@ -85,7 +85,7 @@ if ($_POST)
         }
         else
         {
-            $result = $pdo->prepare("INSERT INTO user (pseudo, pwd, firstname, lastname, email, gender, city, zip_code, address, privilege) VALUES (:pseudo, :pwd, :firstname, :lastname, :email, :gender, :city, :zip_code, :address, 0)");
+            $result = $pdo->prepare("INSERT INTO user (pseudo, pwd, firstname, lastname, email, gender, city, zip_code, address, picture, privilege) VALUES (:pseudo, :pwd, :firstname, :lastname, :email, :gender, :city, :zip_code, :address, 'default.jpg', 0)");
 
             $hashed_pwd = password_hash($_POST['password'], PASSWORD_BCRYPT); // function password_hash() allows us to encrypt the password in a much secure way than md5. It takes 2 arguments: the result to hash, the method
 
